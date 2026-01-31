@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tetris-game"
-version = "1.0.0"
+version = "1.0.1"
 description = "A classic Tetris game implementation in Python using Pygame"
 readme = "README.md"
 authors = [
