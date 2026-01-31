@@ -381,9 +381,10 @@ def main_menu():
 
 def start_game():
     """Entry point for the game when installed as a package."""
+    global win
     win = pygame.display.set_mode((s_width, s_height))
     pygame.display.set_caption('Tetris')
-    main_menu(win)  # start game
+    main_menu()  # start game
 
 
 if __name__ == '__main__':
