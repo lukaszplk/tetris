@@ -379,7 +379,12 @@ def main_menu():
     pygame.quit()
 
 
-win = pygame.display.set_mode((s_width, s_height))
-pygame.display.set_caption('Tetris')
+def start_game():
+    """Entry point for the game when installed as a package."""
+    win = pygame.display.set_mode((s_width, s_height))
+    pygame.display.set_caption('Tetris')
+    main_menu(win)  # start game
 
-main_menu()  # start game
+
+if __name__ == '__main__':
+    start_game()
